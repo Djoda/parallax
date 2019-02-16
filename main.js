@@ -1,0 +1,22 @@
+$(document).ready(function(){
+
+    
+    $(window).scroll(function(){
+        var barra = $(window).scrollTop();
+        var position = barra * 0.50;
+        $('body').css({
+           // 'background-position': '0 -'+position+ 'px'
+           'background-position': '-'+position+ 'px 0'
+        });
+    });
+    
+    $("#container").scroll(function(){
+        alert("ok");
+        /* var barra = $(window).scrollTop();
+        var position = barra * 0.50;
+        $('body').css({
+           // 'background-position': '0 -'+position+ 'px'
+           'background-position': '-'+position+ 'px 0'
+        }); */
+    });
+});
